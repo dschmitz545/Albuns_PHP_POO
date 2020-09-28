@@ -13,8 +13,8 @@
         <p>
             <a href="index.php" class="btn btn-primary btn-lg btn-outline-primary<?=$class_todos_active?>">Todos</a>
             <?php
-                foreach ($estilos as $estilo):
-                    $estilo = $estilo['estilo'];
+                foreach ($estilos as $estilo): /**@var $estilo Estilo */
+                    $estilo = $estilo->getEstilo();
 
                     $url = 'index.php?estilo=' . $estilo;
                     $class_active = ($estilo == $escolha) ? ' active' : null;
