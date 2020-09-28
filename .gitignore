@@ -1,3 +1,5 @@
 .env
 fase06/
 *.zip
+vendor
+composer.lock
